@@ -160,23 +160,23 @@ ul.no-bullets
 	position: relative;
 	background: #EBECED;
 }
-.home >.semi-circle
-{
-  height:70px;
-  width: 140px; 
+ #triangle-up {
+ 	height:70px;
+  width: 140px;
   border-radius: 100px 100px 0 0; 
   background-color: #DDDDDD;
   position: absolute;
   bottom: 0;
   left: calc(50% - 70px);
-}
-.semi-circle a
+ }
+.semi a
 {
 	color: black;
 }
-.semi-circle a:activated
+.semi a:activated
 {
 	color: black;
+
 }
 .spec p
 {
@@ -227,6 +227,10 @@ ul.no-bullets
 {
 	list-style: none;
 	padding-bottom: 15px;
+}
+.professionalAccolades ul
+{
+	padding-left: 20px;
 }
 /******************************************************************* EXPERIENCES **********************************************/ 
 .list , .in-list
