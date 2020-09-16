@@ -40,17 +40,20 @@
 {
 	background:#2D395D;
 	color: white;
+	border-radius: 6px;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
 {
 	background: #2D395D;
 	color: #FFFFFF;
+	border-radius: 6px;
 
 }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar
 {
 	background: #2D395D;
+	border-radius: 6px;
 }
 .fixed .navbar
 {
@@ -189,14 +192,13 @@ ul.no-bullets
 #profile .row img
 {
 	margin-top: 40px;
-	max-width: 50%;
   padding-top: 10px;
-  height: auto;
-  border-radius: 50%;
+  border-radius: 90%;
 }
-#profile >.row > img
+#profile >.row img
 {
-	text-align: center;
+	height: auto;
+	text-align:right;
 }
 #profile hr ,#abilities hr
 {
@@ -230,11 +232,14 @@ ul.no-bullets
 .list , .in-list
 {
 	list-style: none;
-
 }
 #experiences .in-list>li
 {
 	margin-bottom: 20px;
+}
+#experiences  .in-list
+{
+	margin-bottom:40px;
 }
 #experiences .list >li:nth-child(1):before
 {
@@ -256,20 +261,12 @@ ul.no-bullets
 {
 	padding-left: 10px;
 }
-#experiences >hr
-{
-	width: 500px;
-	margin-left: 150px;
-}
- #abilities >.row >div> img
-{
-	height: 90px;
-	margin-left: 10px;
-}
 #experiences h3
 {
 	line-height: 30px;
-	font-size: 22px;	
+	font-size: 22px;
+	padding: 0;
+	margin: 0;
 }
 #experiences b
 {
@@ -337,6 +334,7 @@ hr
 {
   	background: #FFFFFF;
 	box-shadow: 0px 16px 24px -10px rgba(0, 0, 0, 0.25);
+	transition: 1s;
 }
 .col1 ul
 {
@@ -369,30 +367,20 @@ hr
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-#contact .col1
-{
-	border-right: 1px solid white;
-}
 /************************************************ CONTACT **********************************************/
-#contact .row
+#contact
 {
+	min-height: 50vh;
 	font-size: 18px;
 	line-height: 25px;
 }
-#contact hr
+#contact >h2
 {
-	text-align: center;
-	width: 300px;
-	margin-left: 0px;
-}
-#contact > .row > hr
-{
-	color: green;
-	margin-left: 0px;
+	margin-top: 0px;
+
 }
 #contact
 {
-	height: 50vh;
 	color: white;	
 }
 #contact a
@@ -441,10 +429,12 @@ td, th
 }
 .foot table
 {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .foot p
 {
+	font-weight: 100;
+	font-size: 12px;
 	padding: 21px;
 }
 /**************************************** LINE *****************************************************/

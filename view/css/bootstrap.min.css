@@ -384,7 +384,6 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 sm
 }
 h1,.h1,h2,.h2,h3,.h3
 {
-	margin-top:20px;
 	margin-bottom:10px;
 }
 h1 small,.h1 small,h2 small,.h2 small,h3 small,.h3 small,h1 .small,.h1 .small,h2 .small,.h2 .small,h3 .small,.h3 .small
@@ -425,7 +424,7 @@ h6,.h6
 }
 p
 {
-	margin:0 0 10px;
+	margin:0 0 0px;
 }
 .lead
 {
