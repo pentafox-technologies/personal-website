@@ -3,7 +3,7 @@
 	border: 0px;
 	background-color: #233143;
 	position: absolute;
-	top: 100.5%;
+	top: 110vh;
 	right: 5%;
 	width: 110px;
 	z-index: 999;
@@ -45,6 +45,7 @@
 {
 	background: #2D395D;
 	color: #FFFFFF;
+
 }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar
@@ -55,168 +56,12 @@
 {
 	position: fixed;
 	top: 60px;
-}
-@media (max-width: 1200px)
-{ 
-	#interests .interest-content
-	{
-		padding: 20px 0px;
-	}
-}
-@media (max-width: 767px)
-{ 
-	.jumbotron:before
-	{
-		bottom: 100px;
-		left: 20px;
-		right: 20px;
-		top: 20px;		
-	}
-	.jumbotron .container { top: 20%; padding-top: 0px; }
-	.jumbotron .scroll-down { width: 100%; right: 0px; }
-	.navbar  { left: 0px; width: 100%; }
-	.navbar .nav > li { height: 60px; }
-	.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
-	
-	.fixed .navbar { top: 0px; }
-	
-	.container { padding: 60px 20px; min-width: 280px; }
-	.hidden-phone { display: none; }
-	
-	#profile .row * { text-align: center; }
-	
-	#experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
-	#experiences .experience .experience-details .seperator { display: none; }
-	
-	#interests .left { float: none; }
-	#interests .right { float: none; }
-	
-	#interests > * { text-align: center; }
-	#interests img { width: 50%; height: auto; float: none !important; } 
-	#interests .interest-content { padding: 20px 0px; }
-	
-	#contact { padding-bottom: 60px; }
-	#contact a .icon { float: left; margin-right: 10px; }
-}    
 
-@media only screen and (orientation: portrait) and (max-width: 767px)
-{
-    .jumbotron
-    {
-      -webkit-background-size: auto 150%;
-      background-attachment: scroll;
-    }
-}
-@media only screen and (orientation: landscape) and (max-width: 767px)
-{
-
-    .jumbotron
-    {
-      -webkit-background-size: 150% auto;
-      background-attachment: scroll;
-    }
-	
-	.jumbotron .lead
-	{
-		display: none;
-	}
-}
-@keyframes wiggle
-{
-	0%
-	{
-		padding-top: 20px;
-	}
-
-	50%
-	{
-		padding-top: 28px;
-	}
-
-	100%
-	{
-		padding-top: 20px;
-	}
-}
-figure.effect
-{
-	background: #22A39F;
-	color: #FFF;
-}
-
-figure.effect img
-{
-	width: -webkit-calc(100% + 20px);
-	width: calc(100% + 20px);
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-10px,0,0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-figure.effect:hover img
-{
-	opacity: 0.2;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-figure.effect figcaption
-{
-	text-align: left;
-}
-figure.effect h3
-{
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 20px;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
-figure.effect:hover h3
-{
-	opacity: 1;
-}
-
-figure.effect h3::after
-{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: #fff;
-	content: '';
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(-100%,0,0);
-	transform: translate3d(-100%,0,0);
-}
-figure.effect:hover h3::after
-{
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-figure.effect p
-{
-	padding-top: 10px;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(100%,0,0);
-	transform: translate3d(100%,0,0);
-}
-figure.effect:hover p
-{
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
 }
 /******************************************************************************************************************************************/
 html, body
 {
-	
+	font-family: 'Open Sans', sans-serif;
 	font-family: 'Open Sans' !important;
 	height: 100%;
 }
@@ -261,21 +106,6 @@ ul.no-bullets
 	list-style-type: none;
 	margin: 0px; padding: 0px;
 }
-.home hr
-{
-	margin: 20px 250px;
-	border-color: #727878;
-	opacity: 0.2;
-	filter:alpha(opacity=20);
-	width: 320px;
-}
-hr
-{
-	margin: 20px 0px;
-	border-color: #727878;
-	opacity: 0.5;
-	filter:alpha(opacity=20);
-}
 .project-referal
 {
 	margin-top: 40px;
@@ -309,158 +139,6 @@ hr
 {
 	margin-bottom: 30px;
 }
-#projects figure
-{
-	position: relative;
-	overflow: hidden;
-}
-#projects figure h3
-{
-	color: #FFF;
-	font-weight: 600; margin-bottom: 5px;
-}
-#projects > .line
-{
-	margin-left: 250px;
-}
-#projects figure p > strong
-{
-	width: 60px;
-	display: inline-block;
-	margin: 0px;
-}
-#projects figure img
-{
-	width: 110%;
-}
-#projects figure figcaption
-{
-    padding: 20px 30px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-}
-#projects figure a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-}
-#contact
-{
-	padding-bottom: 200px;
-}
-#contact h2, #contact .row *
-{
-	color: #FFFFFF;
-}
-@media (max-width: 1200px)
-{ 
-	#interests .interest-content { padding: 20px 0px; }
-}
-@media (max-width: 767px)
-{ 
-.jumbotron:before
-{
-	bottom: 100px;
-	left: 20px;
-	right: 20px;
-	top: 20px;		
-}
-.container
-{
-	padding: 60px 20px; min-width: 280px;
-}
-.hidden-phone
-{
-	display: none;
-}
-#profile .row *
-{
-	text-align: center;
-}
-#experiences .experience .experience-details > span
-{
-	display: block;
-	margin-bottom: 6px;
-}
-#experiences .experience .experience-details .seperator
-{
-	display: none;
-}
-#interests .left
-{
-	float: none;
-}
-#interests .right
-{
-	float: none;
-}
-#interests > *
-{
-	text-align: center;
-}
-#interests img
-{
-	width: 50%;
-	height: auto;
-	float: none !important;
-} 
-#interests .interest-content
-{
-	padding: 20px 0px;
-}
-#contact
-{
-	padding-bottom: 60px;
-}
-#contact a .icon
-{
-	float: left;
-	margin-right: 10px;
-}
-}    
-@media only screen and (orientation: portrait) and (max-width: 767px)
-{
-    .jumbotron
-    {
-      -webkit-background-size: auto 150%;
-      background-attachment: scroll;
-    }
-}
-@media only screen and (orientation: landscape) and (max-width: 767px) 
-{
-    .jumbotron
-    {
-      -webkit-background-size: 150% auto;
-      background-attachment: scroll;
-    }
-	.jumbotron .lead
-	{
-		display: none;
-	}
-}
-@keyframes wiggle {
-	0% {
-		padding-top: 20px;
-	}
-
-	50% {
-		padding-top: 28px;
-	}
-
-	100% {
-		padding-top: 20px;
-	}
-}
 /******************************************** Styles ********************************************************/
 *
 {
@@ -470,46 +148,33 @@ hr
 /****************************************************** HOME ***************************************************/
 .home
 {
-	text-align: center;
+	display: flex;
+	text-align:  center;
+	flex-direction: column;
+	justify-content: center;
 	font-weight: 600;
+	height: 100vh;
+	min-height: 600px;
+	position: relative;
 	background: #EBECED;
 }
-.spe
+.home >.semi-circle
 {
-	text-align: center;
-	max-height: 262px;
-	background:#EBECED;
-}
-.home .row
-{
-	text-align: center;
-	margin-top: 180px;
-}
-.spe a
-{
-	color: black; 
-}
-.spe a:activated
-{
-	color: black;
-}
-.container h3
-{
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 22px;
-}
-.semi-circle
-{
-  margin-top:220px;
-  margin-left: 100px;
-  display: inline-block;
-  transform: translate(-40%, -40%); 
   height:70px;
   width: 140px; 
   border-radius: 100px 100px 0 0; 
   background-color: #DDDDDD;
-
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 70px);
+}
+.semi-circle a
+{
+	color: black;
+}
+.semi-circle a:activated
+{
+	color: black;
 }
 .spec p
 {
@@ -521,7 +186,7 @@ hr
 	line-height: 19px;
 }
 /******************************************************* PROFILE ****************************************/
- #profile .row img
+#profile .row img
 {
 	margin-top: 40px;
 	max-width: 50%;
@@ -537,30 +202,59 @@ hr
 {
 	margin-left: 150px;
 }
+#profile .btn
+{
+	background-color: #233143;
+	color: white;
+}
+#profile .btn a
+{
+	text-decoration: none;
+	color: white;
+}
+#profile .btn a:activated
+{
+	color: white;
+}
+.professionalAccolades >ul >li:nth-child(n):before
+{
+	content: "\2015";
+	padding-right: 10px;
+}
+.professionalAccolades >ul >li
+{
+	list-style: none;
+	padding-bottom: 15px;
+}
 /******************************************************************* EXPERIENCES **********************************************/ 
 .list , .in-list
 {
 	list-style: none;
 
 }
-.list >li:nth-child(1):before
+#experiences .in-list>li
 {
-	content: "\2015 \0020";
+	margin-bottom: 20px;
+}
+#experiences .list >li:nth-child(1):before
+{
+	content: "\2015";
 	color :black;
+	position: absolute;
+	margin-left: -20px;
+	padding-right: 10px;
 }
-.list >li:before
+#experiences .in-list >li:before
 {
-	content: "\2015 \0020";
-	color: #D0D2E6;
+	content: "\2015";
+	color:black;
+	position: absolute;
+	margin-left: -20px;
+	padding-right: 10px;
 }
-.in-list >li:nth-child(n):before
+#experiences >.list >li
 {
-	content: "\2015 \0020";
-	color :black;	
-}
-.in-list >li
-{
-	padding-bottom: 10px;
+	padding-left: 10px;
 }
 #experiences >hr
 {
@@ -608,7 +302,30 @@ hr
 	margin-left: 150px;
 	
 }
-
+.a_list >li
+{
+	list-style: none;
+	margin-bottom: 10px;
+}
+.a_list >li:before
+{
+	content: "\2015";
+	position: absolute;
+	margin-left: -20px; 
+	margin-bottom: 20px;
+}
+#abilities .list
+{
+	padding-bottom: 20px;
+}
+#abilities .list >li:nth-child(1):before
+{
+	content: "\2015";
+	color :black;
+	position: absolute;
+	margin-left: -20px;
+	padding-right: 10px;
+}
 /****************************************************** PROJECTS *****************************************************/
 .col1
 {
@@ -675,6 +392,20 @@ hr
 }
 #contact
 {
+	height: 50vh;
+	color: white;	
+}
+#contact a
+{
+	text-decoration: none;
+	color: white;
+}
+#contact a:active
+{
+	color: white;
+}
+#contact a:visited
+{
 	color: white;
 }
 table
@@ -698,50 +429,19 @@ td, th
 }
 /************************************** NAV ***************************************************/
 
-.sidenav
-{
-  max-height: none;
-  text-align: center;
-  width: 120px;
-  height: auto;
-  z-index: 1;
-  right: 80px;
-  background: #233143;
-  overflow-x: hidden;
-  padding: 30px 15px 15px 15px;
-}
-
-.sidenav a {
-  padding: 30px 10px 15px 10px;
-  text-decoration: none;
-  height: 20px
-  font-size: 12px;
-  font-weight: 600;
-  color: white;
-  display: block;
-}
-
-.sidenav a:hover
-{
-	background:#2D395D;
-  color:white;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 /*************************************** FOOTER *********************************************/
 .foot
 {
 	text-align: center;
 	color: white;
+ 	background: #2D395D;
+ 	margin: 0px;
+ 	padding: 0px;
+
 }
-.foot hr
+.foot table
 {
-	margin-left: 444px;
-	width: 611px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 .foot p
 {
@@ -750,21 +450,96 @@ td, th
 /**************************************** LINE *****************************************************/
 .line
 {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	text-align: center;
 	width: 300px;
 	border-bottom: 1px solid gray;
+	margin-left: auto;
+	margin-right: auto;
 }
-#abilities > .line
+.home .line
 {
-	margin-left: 250px;
+	margin-bottom: 0px;
+	margin-top: 25px;
 }
-#experiences >.line
+.foot .line
 {
-	margin-left: 225px;
-	width: 350px;
+	margin-top: 40px;
+	width: 700px;
+	margin-bottom: 0px;
 }
-#profile > .line
-{
-	margin-left: 250px;
+
+@media (max-width: 532px)
+{ 
+	.jumbotron:before
+	{
+		bottom: 100px;
+		left: 20px;
+		right: 20px;
+		top: 20px;		
+	}
+	.jumbotron .scroll-down
+	{
+		width: 100%;
+		right: 0px;
+	}
+	.navbar
+	{
+		left: 0px;
+		width: 100%;
+	}
+	.navbar .nav > li
+	{
+		height: 60px;
+	}
+	.navbar .nav > li a
+	{
+		height: 60px;
+		text-align: center;
+		padding-top: 20px;
+		font-weight: 600;
+		color: #FFFFFF;
+	}
+	.fixed .navbar
+	{
+		top: 0px;
+	}
+	.container
+	{padding: 60px 20px; min-width: 280px; }
+	.hidden-phone { display: none; }
+	#profile .row * { text-align: center; }
+	#experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
+	#experiences .experience .experience-details .seperator { display: none; }
+	#contact { padding-bottom: 60px; }
+	#contact a .icon { float: left; margin-right: 10px; }
+	.foot {}
+}  
+@media only screen and (orientation: portrait) and (max-width: 767px)  {
+    .jumbotron {
+      -webkit-background-size: auto 150%;
+      background-attachment: scroll;
+    }
+}
+@media only screen and (orientation: landscape) and (max-width: 767px)  {
+
+    .jumbotron {
+      -webkit-background-size: 150% auto;
+      background-attachment: scroll;
+    }
+	
+	.jumbotron .lead { display: none; }
+}
+
+@keyframes wiggle {
+	0% {
+		padding-top: 20px;
+	}
+
+	50% {
+		padding-top: 28px;
+	}
+
+	100% {
+		padding-top: 20px;
+	}
 }
